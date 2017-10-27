@@ -44,9 +44,7 @@ TestSet  <- TestSet[, -(1:5)]
 dim(TrainSet)
 
 dim(TestSet)
-corMatrix <- cor(TrainSet[, -54])
-corrplot(corMatrix, order = "FPC", method = "color", type = "lower", 
-         tl.cex = 0.8, tl.col = rgb(0, 0, 0))
+
 
 # RANDOM FOREST
 set.seed(12345)
